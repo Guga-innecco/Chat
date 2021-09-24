@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Join The Chat" id="username">
+    <p id="text"></p>
+    <button onclick="setName()">Reset Name in text (no input)</button>
+    <a href="#"><button>Enter</button></a>
+    <script>
+        var Username = document.getElementById("username");
+        var Text = document.getElementById("text");
+        const setName = new function () {
+            Text.innerHTML = `${"you name is", Username.value}`
+        }
+    </script>
+</body>
+</html>
